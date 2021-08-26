@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .slider-img-bg {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-header">
+    <div class="main-header-left">
+      <div class="header-logo-text">
+        <h2> <a onclick="showsmallernav()" id="showNavbar" class="hidden-lg hidden-md"
+            style="font-size: 32px; margin-top: 3px; margin-right: 7px;"><i class="fa fa-bars"></i></a>
+           <span class="text-1">Emdo</span><span class="text-2">Mart</span></h2>
+      </div>
+      <a class="hidden-lg hidden-md"
+        style="float: right; padding: 3px 7px; font-size: 16px; margin-top: 15px; margin-right: 7px; text-decoration: none;">Login
+        / Sign In</a>
+      <div class="header-center-search-form">
+        <div class="header-center-search-form-content">
+          <select name="" id="">
+            <option value="Product">Product</option>
+            <option value="Suppliers">Suppliers</option>
+          </select>
+          <input type="text" placeholder="What are you looking for ?">
+          <button type="button"><i class="fa fa-search"></i> <span class="hidden-sm hidden-xs">Search</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header-right">
+      <div class="header-content">
+        <ul>
+          <li class="hidden-sm hidden-xs"><a href="user Authentication profiles/login_Register/Login.html"><i class="fa fa-user-circle"></i> Sign In/ Join Free</a></li>
+          <li class="hidden-sm hidden-xs"><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="show-md-nav hidden-lg hidden-md" id="hide-md-nav-id"> </div>
+  <nav id="navbar">
+    <ul class="catagory-ul">
+      <li class="catli Catagories" onmouseover="hideSlider()" onmouseout="showSlider()"><a href="#" class="catlit"><i
+            class="fa fa-align-justify"></i> Catagories <i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-list" id="ddl">
+          <div class="container-fluid dropdown-list-menu">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 catagory-first-col">
+                <ul class="dropdown-list-menu-items">
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(1)"
+                      class="dropdown-list-menu-items-li-a">Machinery / Fabrication Service <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i> </a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(2)"
+                      class="dropdown-list-menu-items-li-a">Consumer Electronics / Home Appliances <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(3)"
+                      class="dropdown-list-menu-items-li-a">Vehicles & Accessories / Sports & Entertainment <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(4)"
+                      class="dropdown-list-menu-items-li-a">Apparel / Fabric / Timepieces / Accessories <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Home
+                      Textiles / Lights / Furniture / Construction <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Home &
+                      Kitchen / Garden Supplies / Pet Products <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Beauty &
+                      Personal Care / Health & Medical <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Packaging &
+                      Printing / Office / Service Equipment <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Electrical /
+                      Tools & Hardware / Security & Protection <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Electronic
+                      Components / Telecommunications <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Toys &
+                      Hobbies / Gifts & Crafts / Baby <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Bags / Shoes
+                      & Accessories <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Minerals /
+                      Chemicals / Rubber & Plastics / Energy <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-7 col-md-7 catagory-second-col">
+                <div class="container-fluid" id="subbcat">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="catli"><a href="#" class="catlit">Ready to Ship</a></li>
+      <li class="catli"><a href="#" class="catlit">Trade Shows</a></li>
+      <li class="catli"><a href="#" class="catlit sercdrpdn">Services</li>
+      <li class="catli"><a href="#" class="catlit">Sell on Emdo Mart</a></li>
+      <li class="catli"><a href="help.html" class="catlit">Help</a></li>
+      <li class="catli"><a href="#" class="catlit">Buy Emdo Membership</a></li>
+    </ul>
+  </nav>
+
+  <div class="index-slider" id="isw">
+    <div class="swiper-container  inslidcolcon" id="nodisplay">
+      <div class="swiper-wrapper inslidcolconwrp">
+        <div class="swiper-slide swslibig ">
+          <img src="sliderimg/1.jpg" alt="" class="slider-img-bg">
+        </div>
+        <div class="swiper-slide">
+          <img src="sliderimg/2.jpg" alt="" class="slider-img-bg">
+        </div>
+        <div class="swiper-slide">
+          <img src="sliderimg/3.jpg" alt="" class="slider-img-bg">
+        </div>
+        <div class="swiper-slide">
+          <img src="sliderimg/4.jpg" alt="" class="slider-img-bg">
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <section class="emmembrsh">
+    <div class="container-fluid">
+      <div class="membership">
+        <a class="membership-content">
+          <h2>Want to Buy Our Membership </h2>
+          <button>Read More..</button>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="recnaprod">
+    <h2>RECOMMENDATIONS FOR YOU</h2>
+    <div class="swiper-container naprod container-fluid">
+      <div class="swiper-wrapper naprodwr">
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+        <div class="swiper-slide naprodslidr">
+          <img src="img/1.jpg" alt="" class="naprodslidrimg">
+          <p class="prodlabl">2020 Spring New Design Plain Quick Dry Polo shirt for Men</p>
+          <b class="prodprzlabl">₹ 946.89-₹ 1,219.30 / Pieces</b>
+          <p class="prodqntlabl">2 Pieces(Min Order)</p>
+          <a href="" class="getaquote">Get A Quote </a>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+
+  <section class="request-a-quote">
+    <div class="container-fluid reqaqu">
+      <div class="row reqquot1">
+        <div class="col-lg-6 col-md-6 request-form-content prodci hidden-sm  hidden-xs"
+          style=" background: #ccd; margin-top: 0px;">
+          <h2>Let Me Help You?</h2>
+          <h4>Tell us your Requrements</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor mollis nibh eget pretium. Curabitur vel
+            purus congue, feugiat lectus eget, sagittis mi. Suspendisse eget erat sit amet leo consectetur lacinia.
+            Fusce justo ligula, pretium in sagittis nec, faucibus eget lorem. Aenean vehicula placerat eros in
+            tincidunt. Praesent id fermentum odio.</p>
+          <br><br><br>
+        </div>
+        <div class="col-lg-6 col-md-6 request-form" style=" border:5px solid #ccd; ">
+          <h3>Request For Call Back</h3>
+          <input type="text" name="reqpnam" class="reqfin" placeholder="What Are you Looking For ? *">
+          <input type="text" name="reqpnam" class="reqqun" placeholder="Quantity">
+          <select id="rfq-unit" name="quantityUnit">
+            <option value="Bag/Bags">Bag/Bags</option>
+            <option value="Barrel/Barrels">Barrel/Barrels</option>
+            <option value="Bushel/Bushels">Bushel/Bushels</option>
+            <option value="Cubic Meter/Cubic Meters">Cubic Meter/Cubic Meters</option>
+            <option value="Dozen/Dozens">Dozen/Dozens</option>
+            <option value="Gallon/Gallons">Gallon/Gallons</option>
+            <option value="Gram/Grams">Gram/Grams</option>
+            <option value="Kilogram/Kilograms">Kilogram/Kilograms</option>
+            <option value="Kilometer/Kilometers">Kilometer/Kilometers</option>
+            <option value="Long Ton/Long Tons">Long Ton/Long Tons</option>
+            <option value="Meter/Meters">Meter/Meters</option>
+            <option value="Metric Ton/Metric Tons">Metric Ton/Metric Tons</option>
+            <option value="Ounce/Ounces">Ounce/Ounces</option>
+            <option value="Pair/Pairs">Pair/Pairs</option>
+            <option value="Pack/Packs">Pack/Packs</option>
+            <option value="Piece/Pieces">Piece/Pieces</option>
+            <option value="Pound/Pounds">Pound/Pounds</option>
+            <option value="Set/Sets">Set/Sets</option>
+            <option value="Short Ton/Short Tons">Short Ton/Short Tons</option>
+            <option value="Square Meter/Square Meters">Square Meter/Square Meters</option>
+            <option value="Ton/Tons">Ton/Tons</option>
+            <option value="Liter/Liters">Liter/Liters</option>
+            <option value="Yard/Yards">Yard/Yards</option>
+            <option value="Milligram/Milligrams">Milligram/Milligrams</option>
+            <option value="Unit/Units">Unit/Units</option>
+            <option value="Acre/Acres">Acre/Acres</option>
+            <option value="Ampere/Amperes">Ampere/Amperes</option>
+            <option value="Box/Boxes">Box/Boxes</option>
+            <option value="Carton/Cartons">Carton/Cartons</option>
+            <option value="Case/Cases">Case/Cases</option>
+            <option value="Centimeter/Centimeters">Centimeter/Centimeters</option>
+            <option value="Chain/Chains">Chain/Chains</option>
+            <option value="Cubic Centimeter/Cubic Centimeters">Cubic Centimeter/Cubic Centimeters</option>
+            <option value="Cubic Foot/Cubic Feet">Cubic Foot/Cubic Feet</option>
+            <option value="Cubic Inch/Cubic Inches">Cubic Inch/Cubic Inches</option>
+            <option value="Cubic Yard/Cubic Yards">Cubic Yard/Cubic Yards</option>
+            <option value="Degrees Celsius">Degrees Celsius</option>
+            <option value="Degrees Fahrenheit">Degrees Fahrenheit</option>
+            <option value="Dram/Drams">Dram/Drams</option>
+            <option value="Fluid Ounce/Fluid Ounces">Fluid Ounce/Fluid Ounces</option>
+            <option value="Foot/Feet">Foot/Feet</option>
+            <option value="Furlong/Furlongs">Furlong/Furlongs</option>
+            <option value="Gill/Gills">Gill/Gills</option>
+            <option value="Grain/Grains">Grain/Grains</option>
+            <option value="Hectare/Hectares">Hectare/Hectares</option>
+            <option value="Hertz">Hertz</option>
+            <option value="Inch/Inches">Inch/Inches</option>
+            <option value="Kiloampere/Kiloamperes">Kiloampere/Kiloamperes</option>
+            <option value="Kilohertz">Kilohertz</option>
+            <option value="Kiloohm/Kiloohms">Kiloohm/Kiloohms</option>
+            <option value="Kilovolt/Kilovolts">Kilovolt/Kilovolts</option>
+            <option value="Kilowatt/Kilowatts">Kilowatt/Kilowatts</option>
+            <option value="Megahertz">Megahertz</option>
+            <option value="Mile/Miles">Mile/Miles</option>
+            <option value="Milliampere/Milliamperes">Milliampere/Milliamperes</option>
+            <option value="Millihertz">Millihertz</option>
+            <option value="Milliliter/Milliliters">Milliliter/Milliliters</option>
+            <option value="Millimeter/Millimeters">Millimeter/Millimeters</option>
+            <option value="Milliohm/Milliohms">Milliohm/Milliohms</option>
+            <option value="Millivolt/Millivolts">Millivolt/Millivolts</option>
+            <option value="Milliwatt/Milliwatts">Milliwatt/Milliwatts</option>
+            <option value="Nautical Mile/Nautical Miles">Nautical Mile/Nautical Miles</option>
+            <option value="Ohm/Ohms">Ohm/Ohms</option>
+            <option value="Parcel/Parcels">Parcel/Parcels</option>
+            <option value="Perch/Perches">Perch/Perches</option>
+            <option value="Pint/Pints">Pint/Pints</option>
+            <option value="Pole/Poles">Pole/Poles</option>
+            <option value="Quart/Quarts">Quart/Quarts</option>
+            <option value="Quarter/Quarters">Quarter/Quarters</option>
+            <option value="Rod/Rods">Rod/Rods</option>
+            <option value="Roll/Rolls">Roll/Rolls</option>
+            <option value="Square Centimeter/Square Centimeters">Square Centimeter/Square Centimeters</option>
+            <option value="Square Foot/Square Feet">Square Foot/Square Feet</option>
+            <option value="Square Inch/Square Inches">Square Inch/Square Inches</option>
+            <option value="Square Mile/Square Miles">Square Mile/Square Miles</option>
+            <option value="Square Yard/Square Yards">Square Yard/Square Yards</option>
+            <option value="Stone/Stones">Stone/Stones</option>
+            <option value="Tonne/Tonnes">Tonne/Tonnes</option>
+            <option value="Tray/Trays">Tray/Trays</option>
+            <option value="Volt/Volts">Volt/Volts</option>
+            <option value="Watt/Watts">Watt/Watts</option>
+            <option value="Wp">Wp</option>
+            <option value="Twenty-Foot Container">Twenty-Foot Container</option>
+            <option value="Strand/Strands">Strand/Strands</option>
+            <option value="Plant/Plants">Plant/Plants</option>
+            <option value="Pallet/Pallets">Pallet/Pallets</option>
+            <option value="Gross">Gross</option>
+            <option value="Forty-Foot Container ">Forty-Foot Container </option>
+            <option value="Sheet/Sheets">Sheet/Sheets</option>
+            <option value="Carat/Carats">Carat/Carats</option>
+            <option value="Blade/Blades">Blade/Blades</option>
+            <option value="Combo/Combos">Combo/Combos</option>
+          </select>
+          <input type="text" name="reqpname" class="reqfin" placeholder="Full Name *">
+          <input type="text" name="reqpname" class="reqfin" placeholder="Email ID *">
+          <input type="text" name="reqpname" class="reqfin" placeholder="Phone Number *">
+          <a href="" class="btn btn-info">Request For Call Back</a>
+          <br><br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="prodci hidden-sm  hidden-xs">
+    <div class="product-card container-fluid recnaprod">
+      <h2>Electronics</h2>
+      <div class="card">
+        <div class="img-bg">
+          <img src="img/Electricals.jpg" alt="">
+        </div>
+        <div class="content-bx">
+          <div class="content">
+            <div class="row">
+              <div class="col-lg-2"><a href="">Auto Parts</a> </div>
+              <div class="col-lg-2"><a href="">Auto Accessories</a></div>
+              <div class="col-lg-2"><a href="">Automotive Batteries</a></div>
+              <div class="col-lg-2"><a href="">Automotive Batteries</div>
+              <div class="col-lg-2"><a href="">Automotive Batteries</div>
+              <div class="col-lg-2"><a href="">Two Wheeler & Parts</a></div>
+              <div class="col-lg-2"><a href="">Car Accessories</a></div>
+              <div class="col-lg-2"><a href="">Oil & Lubricants</a></div>
+              <div class="col-lg-2"><a href="">Alignment Machine</a></div>
+              <div class="col-lg-2"><a href="">Balancing Machine</a></div>
+              <div class="col-lg-2"><a href="">Four post lift</a></div>
+              <div class="col-lg-2"><a href="">More</a></div>
+              <div class="col-lg-12">
+                <h3>auto parts manufacturers in India</h3>
+
+                <div class="col-lg-2"><a href="">Jamna Auto Industries</a></div>
+                <div class="col-lg-2"><a href="">Usha International Ltd</a></div>
+                <div class="col-lg-2"><a href="">Rane Holdings Ltd</a></div>
+                <div class="col-lg-2"><a href="">Minda Industries Ltd</a></div>
+                <div class="col-lg-2"><a href="">Automotive Axles Ltd</a></div>
+                <div class="col-lg-2"><a href="">Jamna Auto Industries</a></div>
+                <div class="col-lg-2"><a href="">Usha International Ltd</a></div>
+                <div class="col-lg-2"><a href="">Rane Holdings Ltd</a></div>
+                <div class="col-lg-2"><a href="">Minda Industries Ltd</a></div>
+                <div class="col-lg-2"><a href="">Automotive Axles Ltd</a></div>
+                <div class="col-lg-2"><a href="">Minda Industries Ltd</a></div>
+                <div class="col-lg-2"><a href="">Automotive Axles Ltd</a></div>
+                <div class="col-lg-2"><a href="">Usha International Ltd</a></div>
+                <div class="col-lg-2"><a href="">Rane Holdings Ltd</a></div>
+                <div class="col-lg-2"><a href="">Minda Industries Ltd</a></div>
+                <div class="col-lg-2"><a href="">Automotive Axles Ltd</a></div>
+                <div class="col-lg-2"><a href="">Minda Industries Ltd</a></div>
+                <div class="col-lg-2"><a href="">Automotive Axles Ltd</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 first-row">
+          <center>
+            <label>Trade Alert and industry news straight to your inbox.</label>
+            <br>
+            <input type="Email" name="email" placeholder="Email Address" class="footer-subscribe-input">
+            <input type="submit" class="footer-subscribe-button" value="Subscribe" />
+          </center>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 secro">
+          <h3>Logistics Services</h3>
+          <hr>
+          <ul>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Customs Brokerage</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Documentation</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Project Freight</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Pack & Devan</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Warehousing</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 secro">
+          <h3>Importent Links</h3>
+          <hr>
+          <ul class="footer_ul_amrc">
+            <li> <span class="fa  fa-chevron-right"></span><a href="About_Emdo_Global"> About Us</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="service"> Our Services</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="Become Partner"> Become a Partner</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="Become Affiliate"> Become an Affiliate</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="Emdo Foundation"> Emdo Foundation</a> </li>
+          </ul>
+
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 secro">
+          <h3>Buy with Emdo</h3>
+          <hr>
+          <ul>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> All Categories</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> Request for Quotation</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 secro">
+          <h3>Sell With Emdo</h3>
+          <hr>
+          <ul>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> Supplier Memberships</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> Add Product</a> </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p></p>
+    </div>
+  </footer>
+  <section style="background: #292929; padding: 20px;" class="footer-catlin">
+    <div class="container-fluid">
+      <b>Top Categories:</b> <a href="">LED Products</a> | <a href="">Solar Panels</a> | <a href="">Jute Bags</a> | <a
+        href="">Lathe Machine</a> | <a href="">Gift Articles</a> | <a href="">Wedding & Ceremony Goods</a> | <a
+        href="">Sweets & Namkeen </a>| <a href="">Packaging Boxes</a> | <a href="">Sport Shoes</a> | <a href="">Costume
+        & Fashion Jewelry</a> | <a href="">Servo Voltage Stabilizer</a> | <a href="">Essential Oils</a> | <a
+        href="">Bottles</a> | <a href="">Women Wear</a> | <a href="">Home Furnishings</a> | <a href="">Tyres & Tubes</a>
+      | <a href="">Cricket Equipment</a> | <a href="">Oil & Lubricants</a> | <a href="">Sports Goods</a> | <a
+        href="">Disposable Products</a> | <a href="">Road Construction Machinery</a> | <a href="">Solar Products &
+        Equipment</a> | <a href="">Earthing Electrode</a> | <a href="">Cement Plant Machinery</a>
+      <br><br>
+      <b>Popular Products:</b> <a href="">Asphalt Drum Mix Plant</a> | <a href="">Asphalt Batch Mix Plant</a> | <a
+        href="">Branded Shirts</a> | <a href="">Asphalt Mixers</a> | <a href="">Fly Ash Dryer</a> | <a href="">Human
+        Hair</a> | <a href="">Bridal Suits</a> | <a href="">Cotton Shirts</a> | <a href="">Brand Jeans</a> | <a
+        href="">Ladies Kurtis</a> | <a href="">CCTV Camera</a> | <a href="">Mobile Accessories</a> | <a href="">Basmati
+        Rice</a> | <a href="">Vitrified Tiles</a> | <a href="">Solar Water Pump</a> | <a href="">Notebook Making
+        Machine</a> | <a href="">Portable Metal Detector</a> | <a href="">Prefabricated Structure</a> | <a href="">Solar
+        Led Street Light</a> | <a href="">Puf Panel</a> | <a href="">Ice Cream</a>
+      <br><br>
+      <b>City Based Popular Products:</b> <a href="">Sports Goods in Meerut</a> | <a href="">Ceramic Tiles in Morbi</a>
+      | <a href="">Jute Bags in Kolkata</a> | <a href="">Precision Auto Parts In Mumbai</a> | <a href="">Textile Fabric
+        in Ahmedabad</a> | <a href="">Jersey Cow in Karnal</a> | <a href="">Flush Doors in Yamunanagar</a> | <a
+        href="">Fancy Salwar Suits in Delhi</a> | <a href="">Branded T Shirts in Tirupur</a> | <a href="">Stainless
+        Steel Sheets in Mumbai</a> | <a href="">Hand Gloves in Faridabad</a> | <a href="">Brass Handicrafts in
+        Moradabad</a> | <a href="">Electronic Gadgets in Bengaluru</a> | <a href="">Brass Hinges in Jamnagar</a> | <a
+        href="">Stainless Steel Plates in Mumbai</a> | <a href="">Upvc Windows in Hyderabad</a> | <a href="">RO Plant in
+        Kolkata</a>
+    </div>
+  </section>
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.inslidcolcon', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    function show1(str) {
+      document.getElementById("nodisplay").style.display = "none";
+      var xhttp;
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("subbcat").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "catagory pages/navbar sub cat/" + str + ".html", true);
+      xhttp.send();
+    }
+
+    function hideSlider() {
+      document.getElementById("nodisplay").style.display = "none";
+      document.getElementById("isw").style.marginTop = "410px";
+      document.getElementById("ddl").style.width = screen.width + "px";
+      console.log(screen.width);
+
+    }
+    function showSlider() {
+      document.getElementById("nodisplay").style.display = "block";
+      document.getElementById("isw").style.marginTop = "0px";
+    }
+    var swiper = new Swiper('.naprod', {
+      slidesPerView: 'auto',
+      spaceBetween: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    function showsmallernav() {
+      document.getElementById("showNavbar").setAttribute("onclick", "hidesmallernav");
+      document.getElementById("show-md-nav-id").setAttribute("id", "hide-md-nav-id");
+      console.log("hidesmallernav");
+    }
+    function hidesmallernav() {
+      document.getElementById("showNavbar").setAttribute("onclick", "showsmallernav");
+      document.getElementById("hide-md-nav-id").setAttribute("id", "show-md-nav-id");
+      console.log("hidesmallernav");
+    }
+  </script>
+</body>
+
+</html>

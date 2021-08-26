@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ 
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+</script>
+
+
+</head>
+<body>
+
+<section class="container">
+<div class="row ">
+<div class="col-md-12">
+    <div class="panel panel-default">
+        <div class="panel-body">
+<header>Upload Your Prouduct</header>
+            <div class="form-group row">
+                <div class="col-md-6">
+                    <label >Product Title </label>
+                    <input class="form-control" type="text">
+
+                </br>
+                <!-- <image> -->
+                        <p><label for="file"  style="cursor: pointer; color:blue;">Upload Image </label> </p> 
+                       <p> <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+                       <p> <img id="output" width="200" id="image_profile_edit" /></p>
+                        <h6>Note: Your Image Size shoud'nt be more then 1MB</h6>
+                <!-- <image> -->
+
+                    <!-- <textarea> -->
+                        <label >Product Discription </label>
+                    </br>
+                        <textarea rows="4" cols="40">
+
+                            </textarea>
+                     <!-- <textarea> -->
+                   
+                </br>
+                
+                    <div class="col-xs-4">
+            
+
+                          
+                        
+                        <select class="custom-select" size="3">
+                            <option selected>Select Industry</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                        
+                    <div class="col-xs-4" style="margin-left: 50px;">
+                        <select class="custom-select" size="3">
+                          <option selected>select Catogary</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+
+
+                      <label >Product Title </label>
+                      <input class="form-control" type="text">
+                      <label >Product Title </label>
+                      <input class="form-control" type="text">
+                      <label >Product Title </label>
+                      <input class="form-control" type="text">
+
+                  </div>
+                </div>
+                  
+                </div>
+
+               
+
+              </div>
+            </div>
+            </div>
+
+        </div>
+      </div>
+
+</div>
+</section>
+</body>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> 
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</html>

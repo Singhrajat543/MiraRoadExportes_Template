@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Flattern - Flat and trendy bootstrap site template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+  <link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+  <link href="css/jcarousel.css" rel="stylesheet" />
+  <link href="css/flexslider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="../css/tabs.css" rel="stylesheet" />
+  <link href="../css/imgslider.css" rel="stylesheet" />
+  <link href="../css/Searchbar.css" rel="stylesheet" />
+ 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="skins/default.css" rel="stylesheet" />
+ 
+<script>
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+
+</script>
+
+</head>
+
+<body>
+
+    <header>
+      
+        <nav class="navbar navbar-inverse" style="background-color: brown;">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#"> <img class=" img img-responsive " src="../img/emdo mart black.png" style="width:50px;height:50px; margin-top: -14px;">
+                  <label style="margin-top:20;">  Emdo Global mart</label>
+                </a>
+              </div>
+              <ul class="nav navbar-nav">
+                <li class=""><a href="#">Home</a></li>
+                <li><a href="#">Page 1</a></li>
+                <li><a href="#">Page 2</a></li>
+                <li><a href="#">Page 3</a></li>
+              </ul>
+            </div>
+          </nav>
+
+        
+       
+    </header>
+    <!-- end header -->
+   
+
+
+    <!-- <div class="boxed" style=" border: 1px solid green ; width:inherit;">
+       
+    <img class="img img-responsive img-circle" style="width: 40px; height: 40px; margin-bottom:-80px; margin-left:60px;" src="../img/premium.jpg" >
+   <h3 style="display: flex; margin-left: 50%; margin-top: -15%;"><label > Shouguang Bilong Vegetable Fruit Co., Ltd.  </label></h3>
+    <br>
+    <h3><label style="margin-left: 30%; margin-top: auto; margin-top:10px;"> Shouguang Bilong Vegetable Fruit Co., Ltd.  </label></h3>
+    <h5 class="display-4"> joing Year </h5>
+      </div> -->
+      <div class="panel panel-default">
+        <div class="panel-body" style="  width:auto;margin: auto ;">
+            <div class="row" style=" background-color: wheat;  justify-content: center; align-items: center;display: flex;">
+                <div class="span4">
+                    <img class="img img-responsive img-circle" style="width: 50px; height: 70px; display: flex; margin-left:30%; " src="../img/premium.jpg" >
+                    
+                </div>
+                <div class="span8">
+                    <h3 ><label > Shouguang Bilong Vegetable Fruit Co.,Ltd.  </label></h3>
+                    <h5 class="display-4"> joing Year </h5>
+                </div>
+              </div>
+            <img id="output" style= "width:100%; height:200px" id="image_profile_edit" class="img-fluid" alt="Responsive image">
+            <p><label for="file" style="cursor: pointer; color:blue;">Change Image</label></p> 
+            <p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+           
+  
+        </div>
+        
+      </div>
+
+
+        <!-- <taber> -->
+
+  
+
+<div class="wrapper">
+  <div class="container">
+
+  
+    
+    <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+      <ul id="myTab" class="nav nav-tabs nav-tabs-responsive " role="tablist">
+        <li role="presentation" class="active">
+          <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">
+            <span class="text">Home</span>
+          </a>
+        </li>
+        <li role="presentation" class="dropdown dropright">
+          <a href="#" id="myTabDrop2" class="dropdown-toggle  " data-toggle="dropdown" aria-controls="myTabDrop2-contents">
+            <span class="text">Our Product Ctogary</span>
+            <span class="caret">
+            </span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop2" id="myTabDrop2-contents">
+            <li  href="SellerProductPage.html">
+              <a href="#dropdown4" tabindex="-1" role="tab" id="dropdown4-tab" data-toggle="tab" aria-controls="dropdown4">
+                <span>Onian</span>
+              </a>
+            </li>
+            <li>
+              <a href="#dropdown5" tabindex="-1" role="tab" id="dropdown5-tab" data-toggle="tab" aria-controls="dropdown5">
+                <span>Mango</span>
+              </a>
+            </li>
+            <li>
+              <a href="#dropdown6" tabindex="-1" role="tab" id="dropdown6-tab" data-toggle="tab" aria-controls="dropdown6">
+                <span>Patato</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+
+        <li role="presentation" class="dropdown dropright">
+          <a href="#" id="myTabDrop1" class="dropdown-toggle  " data-toggle="dropdown" aria-controls="myTabDrop1-contents">
+            <span class="text">Business Profile</span>
+            <span class="caret">
+            </span>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
+            <li>
+              <a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">
+                <span>About Business</span>
+              </a>
+            </li>
+            <li>
+              <a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">
+                <span>Production Information</span>
+              </a>
+            </li>
+            <li>
+              <a href="#dropdown3" tabindex="-1" role="tab" id="dropdown3-tab" data-toggle="tab" aria-controls="dropdown2">
+                <span>Trade Capablity & Bussiness Terms</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <!-- <li role="presentation">
+          <a href="#samsa" role="tab" id="samsa-tab" data-toggle="tab" aria-controls="samsa">
+            <span class="text">Metamorfoz </span>
+          </a>
+        </li> -->
+      </ul>
+      <div id="myTabContent" class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+          <p>
+            Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater
+            eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
+          </p>
+        </div>
+       
+
+        <div role="tabpanel" class="tab-pane fade" id="dropdown4" aria-labelledby="dropdown4-tab">
+          <div class="col-xs-10 col-xs-offset-1">
+            <form action="#" method="#" role="search">
+            <div class="input-group">
+            <input class="form-control" placeholder="Search Product " name="srch-term" id="ed-srch-term" type="text">
+            <div class="input-group-btn">
+            <button type="submit" id="searchbtn">
+            search</button>
+            </div>
+            </div>
+            </form>
+            </div>
+         
+           
+                    
+                        <ul id="thumbs" class="portfolio">
+                          <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-01-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                          <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 design" data-id="id-1" data-type="icon">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-02-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                          <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 photography" data-id="id-2" data-type="graphic">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-03-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                          <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-04-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                          <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 photography" data-id="id-4" data-type="web">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-05-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                          <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 photography" data-id="id-5" data-type="icon">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-06-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                          <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-07-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                          <!-- Item Project and Filter Name -->
+                          <li class="item-thumbs span3 design" data-id="id-0" data-type="graphic">
+                            <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                            <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Portfolio name" href="img/works/full/image-08-full.jpg">
+                    <span class="overlay-img"></span>
+                    <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                            <!-- Thumb Image and Description -->
+                            <img src="img/works/thumbs/image-08.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                          </li>
+                          <!-- End Item Project -->
+                        </ul>
+              
+
+
+
+        </div>
+     
+      
+        <div role="tabpanel" class="tab-pane fade" id="dropdown5" aria-labelledby="dropdown5-tab">
+          <p>
+            Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred
+           
+          </p>
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="dropdown6" aria-labelledby="dropdown6-tab">
+          <p>
+            Trust fund ssquid scenester freegan cosby sweatere echo park Austin. Cred
+           
+          </p>
+        </div>
+
+
+
+        <div role="tabpanel" class="tab-pane fade" id="dropdown1" aria-labelledby="dropdown1-tab">
+          <p>
+            Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy
+            hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard
+            of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
+          </p>
+          <div class="row">
+            <div  class="span12">
+              <table class="table table-bordered" style= "width:60%; margin-left: 1%; justify-content: center; ">
+                <thead class="thead-dark">
+        
+                  <tr>
+                    <td colspan="4"><label> About Business</label> </td>
+                   </tr>
+                   <tr>
+                  <tr>
+                    <th scope="col" style="background-color: burlywood;" >Business Type</th>
+                    <td scope="col">Manufaturer</th>
+                    <th scope="col" style="background-color: burlywood;">Country</th> 
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" style="background-color: burlywood;">Main Product</th>
+                    <td>Mark</td>
+                    <th style="background-color: burlywood;">Total Employee</th>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="background-color: burlywood;">Total Annual Revanue</th>
+                    <td>Jacob</td>
+                    <th style="background-color: burlywood;">Year of Establishment</th>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="background-color: burlywood;">Certification</th>
+                    <td>Larry</td>
+                    <th style="background-color: burlywood;">Product Certificate</th>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+             
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="dropdown2" aria-labelledby="dropdown2-tab">
+          <p>
+            Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred
+            vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park
+            vegan.
+          </p>
+          
+        <div class="row">
+          <div class="span12">
+            
+              <table class="table table-bordered" style= "width:60%; margin-left: 10%; justify-content: center; ">
+                <thead class="thead-dark">
+                  <tr>
+                    <td colspan="4"> Production Capacity</td>
+                   </tr>
+                   <tr>
+                  <tr>
+                    <th scope="col" style="background-color: burlywood;">Factory Information</th>
+                    <td scope="col"></th>
+                    <th scope="col" style="background-color: burlywood;">Annual Output Value</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+        
+                 
+                    <th scope="row" style="background-color: burlywood;">Factory Country/Region</th>
+                    <td>Mark</td>
+                    <th style="background-color: burlywood;">Year of Establishment</th>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="background-color: burlywood;"> No. of Production Lines</th>
+                    <td>Jacob</td>
+                    <th style="background-color: burlywood;"></th>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" style="background-color: burlywood;">Total Employee</th>
+                    <td>Larry</td>
+                    <th style="background-color: burlywood;">Product Certificate</th>
+                    <td>@twitter</td>
+                  </tr>
+                </tbody>
+              </table>
+             
+
+            
+          </div>
+        </div>
+
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="dropdown3" aria-labelledby="dropdown3-tab">
+          <p>
+            Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred
+            vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan, sartorial keffiyeh echo park
+            vegan.
+          </p>
+          
+        <div class="row">
+          <div class="span12">
+            <h3> OUR TRADE CAPABILITIES</h3>
+              <table class="table table-bordered" style= "width:60%; margin-left: 10%; justify-content: center; ">
+                <thead class="thead-dark">
+                  <tr>
+                    <td colspan="4"> Main Market And Product</td>
+                   </tr>
+                   <tr>
+                  <tr>
+                    <th scope="col" style="background-color:darkgrey;">Main Market</th>
+                    <td scope="col" style="background-color: darkgrey;">Total Revanue(%)</th>
+                    <th scope="col" style="background-color: darkgrey;">Main Products</th>
+                    <th scope="col" style="background-color: darkgrey;">Verification</th>
+                  </tr>
+                </thead>
+                <tbody>
+        <tr>
+                 
+                    <th scope="row">Ethiopia</th>
+                    <td>-</td>
+                    <th>Food ,cookis</th>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <th ></th>
+                    <td></td>
+                    <th ></th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" ></th>
+                    <td></td>
+                    <th ></th>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+             <h3> Business Terms</h3>
+<table class=" table table-bordered">
+
+  <thead class="thead-dark">
+    <tr>
+      <td colspan="2">Business Terms </td>
+     </tr>
+     <tr>
+   
+  </thead>
+
+<tbody>  
+  <tr>
+    <th scope="col" style="background-color:darkgrey;">Accepted Delivery Terms</th>
+    <td scope="col" >FOB</th>
+   
+  </tr>
+  <tr>
+    <th scope="col" style="background-color:darkgrey;">Accepted Payment Currency</th>
+    <td scope="col" ></th>
+   
+  </tr>
+  <tr>
+    <th scope="col" style="background-color:darkgrey;">Accepted Payment Type</th>
+    <td scope="col" ></th>
+   
+  </tr>
+  <tr>
+    <th scope="col" style="background-color:darkgrey;">Nearest Port</th>
+    <td scope="col" ></th>
+   
+  </tr>
+ 
+</tbody>
+
+</table>
+            
+          </div>
+        </div>
+
+        </div>
+
+        <div role="tabpanel" class="tab-pane fade" id="samsa" aria-labelledby="samsa-tab">
+          <p>
+            One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.
+          </p>
+          <p>
+            He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.
+          </p>
+          <p>
+            The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?
+          </p>
+          <p>
+            " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
+          </p>
+          <p>
+            A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.
+          </p>
+          <p>
+            It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.
+          </p>
+          <p>
+            Drops of rain could be heard hitting the pane, which made him feel quite sad.
+          </p>
+          <p>
+            "How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw
+            himself onto his right, he always rolled back to where he was.
+          </p>
+          <p>
+            He must have tried it a hundred times, shut his eyes so that he wouldn't have to look at the floundering legs, and only stopped when he began to feel a mild, dull pain there that he had never felt before. "Oh, God", he thought, "what a strenuous career
+            it is that I've chosen!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        <!-- </taber> -->
+
+      <section id="content">
+        <div class="container">
+  
+
+
+
+
+  
+   
+        
+        
+        
+             <section>
+
+              <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-md-9">
+                            <h3>
+                             <stong style="color: coral;"> Some of Our Product Ctogary</stong></h3>
+                        </div>
+                        <div class="col-md-3">
+                            <!-- Controls -->
+                            <div class="controls pull-right ">
+                                <a class="left fa fa-chevron-left btn btn-success" href="#carousel-example"
+                                    data-slide="prev"></a><a class="right fa fa-chevron-right btn btn-success" href="#carousel-example"
+                                        data-slide="next"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carousel-example" class="carousel slide " data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Sample Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                        <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                      <a class="hidden-sm">buy It</a></p>
+                                                    <p class="btn-details">
+                                                       </i><a class="hidden-sm">Product Name</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product Example</h5>
+                                                        <h5 class="price-text-color">
+                                                            $249.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                      </i><a class="hidden-sm">Buy It</a></p>
+                                                    <p class="btn-details">
+                                                      </i><a  class="hidden-sm">Product</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Next Sample Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $149.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                        <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <a class="hidden-sm">Buy It</a></p>
+                                                    <p class="btn-details">
+                                                        <a  class="hidden-sm">Product Name</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Sample Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                        <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <a class="hidden-sm">Buy Ii</a></p>
+                                                    <p class="btn-details">
+                                                       <a  class="hidden-sm">Product Name</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product with Variants</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                        <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <a class="hidden-sm">Buy It</a></p>
+                                                    <p class="btn-details">
+                                                       </i><a  class="hidden-sm">Product Name</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Grouped Product</h5>
+                                                        <h5 class="price-text-color">
+                                                            $249.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                       <a  class="hidden-sm">Buy It</a></p>
+                                                    <p class="btn-details">
+                                                        <a  class="hidden-sm">Product Name</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product with Variants</h5>
+                                                        <h5 class="price-text-color">
+                                                            $149.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                        <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                       </i><aclass="hidden-sm">Buy It</a></p>
+                                                    <p class="btn-details">
+                                                       <a class="hidden-sm">Product Name</a></p>
+                                                </div>
+                                                <div class="clearfix">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="col-item">
+                                            <div class="photo">
+                                                <img src="http://placehold.it/350x260" class="img-responsive" alt="a" />
+                                            </div>
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="price col-md-6">
+                                                        <h5>
+                                                            Product with Variants</h5>
+                                                        <h5 class="price-text-color">
+                                                            $199.99</h5>
+                                                    </div>
+                                                    <div class="rating hidden-sm col-md-6">
+                                                        <i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="price-text-color fa fa-star"></i><i class="price-text-color fa fa-star">
+                                                        </i><i class="fa fa-star"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="separator clear-left">
+                                                    <p class="btn-add">
+                                                        <a class="hidden-sm">Buy It</a></p>
+                                                    <p class="btn-details">
+                                                       <a  class="hidden-sm">product Name</a></p>
+                                                </div>
+                                                <div class="clearfix">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+              </section>
+
+
+              <div class="span12">
+                <h4>Get in touch with us by filling <strong>contact form below</strong></h4>
+    
+                <form action="" method="post" role="form" class="contactForm">
+                  <div id="sendmessage">Your message has been sent. Thank you!</div>
+                  <div id="errormessage"></div>
+    
+                  <div class="row">
+                    <div class="span4 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="span4 form-group">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="span4 form-group">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                      <div class="validation"></div>
+                    </div>
+                    <div class="span12 margintop10 form-group">
+                      <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <div class="validation"></div>
+                    </br>
+                      <p class="text-center">
+                        <button class="btn btn-large btn-theme " style="background-color: orange;" type="submit">Submit message</button>
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+
+        <!-- End Portfolio Projects -->
+        <!-- divider -->
+        <div class="row">
+          <div class="span12">
+            <div class="solidline">
+            </div>
+          </div>
+        </div>
+        <!-- end divider -->
+        <div class="row">
+          <div class="span12">
+            <h4>Very satisfied <strong>clients</strong></h4>
+            <ul id="mycarousel" class="jcarousel-skin-tango recent-jcarousel clients">
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client1.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client2.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client3.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client4.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client5.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client6.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client1.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client2.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client3.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client4.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client5.png" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="#">
+					<img src="img/dummies/clients/client6.png" class="client-logo" alt="" />
+					</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="aligncenter">
+              <div id="twitter-wrapper">
+                <div id="twitter">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="span3">
+            <div class="widget">
+              <h5 class="widgetheading">Browse pages</h5>
+              <ul class="link-list">
+                <li><a href="#">About our company</a></li>
+                <li><a href="#">Our services</a></li>
+                <li><a href="#">Meet our team</a></li>
+                <li><a href="#">Explore our portfolio</a></li>
+                <li><a href="#">Get in touch with us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="widget">
+              <h5 class="widgetheading">Important stuff</h5>
+              <ul class="link-list">
+                <li><a href="#">Press release</a></li>
+                <li><a href="#">Terms and conditions</a></li>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Career center</a></li>
+                <li><a href="#">Flattern forum</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="widget">
+              <h5 class="widgetheading">Flickr photostream</h5>
+              <div class="flickr_badge">
+                <script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8&amp;display=random&amp;size=s&amp;layout=x&amp;source=user&amp;user=34178660@N03"></script>
+
+              </div>
+              <div class="clear">
+              </div>
+            </div>
+          </div>
+          <div class="span3">
+            <div class="widget">
+              <h5 class="widgetheading">Get in touch with us</h5>
+              <address>
+								<strong>Flattern studio, Pte Ltd</strong><br>
+								 Springville center X264, Park Ave S.01<br>
+								 Semarang 16425 Indonesia
+					 		</address>
+              <p>
+                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
+                <i class="icon-envelope-alt"></i> email@domainname.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="span6">
+              <div class="copyright">
+                <p>
+                  <span>&copy; Flattern - All right reserved.</span>
+                </p>
+                <div class="credits">
+                  <!--
+                    All the links in the footer should remain intact.
+                    You can delete the links only if you purchased the pro version.
+                    Licensing information: https://bootstrapmade.com/license/
+                    Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+                  -->
+                  Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                </div>
+              </div>
+            </div>
+            <div class="span6">
+              <ul class="social-network">
+                <li><a href="#" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Linkedin"><i class="icon-linkedin icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a></li>
+                <li><a href="#" data-placement="bottom" title="Google plus"><i class="icon-google-plus icon-square"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+  <!-- javascript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="js/jquery.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/jcarousel/jquery.jcarousel.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/jquery.fancybox-media.js"></script>
+  <script src="js/google-code-prettify/prettify.js"></script>
+  <script src="js/portfolio/jquery.quicksand.js"></script>
+  <script src="js/portfolio/setting.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  <script src="js/jquery.nivo.slider.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.ba-cond.min.js"></script>
+  <script src="js/jquery.slitslider.js"></script>
+  <script src="js/animate.js"></script>
+  <script src="js/tab.js"></script> -->
+  <script src="js/slideimg.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <!-- Template Custom JavaScript File -->
+  <script src="js/custom.js"></script>
+ 
+  
+</body>
+</html>

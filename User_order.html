@@ -1,0 +1,277 @@
+<html>
+<head>
+<meta charset="utf-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/Your_orderPage.css" rel="stylesheet">
+  </head>
+  <style>
+   #Feedbackbtn {
+  background-color: #edaf53;
+  border: none;
+  color: white;
+  padding: 10px 27px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+   cursor: pointer;
+  }
+  #Deatailsbtn
+  {
+  background-color:#1fe0d0;
+  border: none;
+  color: white;
+  padding: 10px 48px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  }
+  .star-rating{
+line-height:32px;
+  font-size:1.25em;
+}
+.star-rating .fa-star:hover {
+color:orange;
+
+}
+ 
+  </style>
+<script>
+
+	 $(document).ready(function(){ 
+					 $(".fa-star").on({ 
+
+						click: function(){ 
+							 $(this).css("background-color", "red"); 
+            
+               $(this).css("color", "yellow"); 
+              
+						 }  
+					 }); 
+				});
+</script>
+  <body>
+  
+ <header>
+  <ul>
+    <i class='fa fa-shopping-cart'>
+      <span class='counter'></span>
+    </i>
+  </ul>
+</header>
+
+<div class="form-gap">
+  <div class="container">
+  <ol class="breadcrumb" style="background-color:#f5f556;">
+    <li class="breadcrumb-item"><a href="#">User Profile</a></li>
+    <li class="breadcrumb-item active"style="color:black;" aria-current="page">Your Orders </li>
+  </ol>
+  
+        <h3>Your Orders <h3>
+<div class="input-group">
+   <input type="text" placeholder="Search Your All Orders" class="form-control">
+   
+   <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Search</button>
+   </span>
+</div>
+		
+<div class='row'>
+  <div class='product--blue'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <label>Nike Air (Women)</label>
+      
+     
+      <button type="button" data-toggle="modal" data-target="#exampleModal">Buy it again</button>
+	 
+	 <input type="button" id="Feedbackbtn" href="FeedBack_Revue.html" value="leave seller feedback" />
+	 <input type="button" id="Deatailsbtn" value="Product Details" />
+	 
+    </div>
+    <!-- <div class='product_overlay'> -->
+      <!-- <h2>Added to basket</h2> -->
+      <!-- <i class='fa fa-check'></i> -->
+    <!-- </div> -->
+  </div>
+  <div class='product--orange'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+       <label>Nike Air (Women)</label>
+      
+      <button>Buy it again</button>
+	  <input type="button" id="Feedbackbtn" value="leave seller feedback" />
+	 <input type="button" id="Deatailsbtn" value="Product Details" />
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+  <div class='product--red'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <label>Nike Air (Women)</label>
+      
+      <button>Buy it again</button>
+	  <input type="button" id="Feedbackbtn" value="leave seller feedback" />
+	 <input type="button" id="Deatailsbtn" value="Product Details" />
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+  <div class='product--green'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <label>Nike Air (Women)</label>
+     
+      <button>Buy it again</button>
+	  <input type="button" id="Feedbackbtn" value="leave seller feedback" />
+	 <input type="button" id="Deatailsbtn" value="Product Details" />
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+  <div class='product--yellow'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <label>Nike Air (Women)</label>
+      
+      <button>Buy it again</button>
+	  <input type="button" id="Feedbackbtn" value="leave seller feedback" />
+	 <input type="button" id="Deatailsbtn" value="Product Details" />
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+  <div class='product--pink'>
+    <div class='product_inner'>
+      <img src='http://wellandgood.com/wp-content/uploads/2012/07/Nike-Free-30-Womens-Running-Shoe-511495_600_A.png' width='300'>
+      <label>Nike Air (Women)</label>
+      
+      <button>Buy it again</button>
+	  <input type="button" id="Feedbackbtn" value="leave seller feedback" />
+	 <input type="button" id="Deatailsbtn" value="Product Details" />
+    </div>
+    <div class='product_overlay'>
+      <h2>Added to basket</h2>
+      <i class='fa fa-check'></i>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- Buy It Model -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <label class="modal-title">Buy It Again</label>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <div class="card-columns">
+  <div class="card" style="width:60px; height:120px; margin-bottom:-150px;">
+    <img class="card-img-top" src="img/machine.jpg" style="width:60px; height:110px" alt="Card image cap" style="width:60px: height:120px">
+  </div>
+  <div class="card" style="margin-left:150px; margin-top:-100px">
+    <div class="card-body">
+      
+      <a href="#"> <h2  style="font-weight:lighter;font-size:25px;" > Heavy Duty Lathe Machine </h2></a>
+	  
+	  
+	  <div class="star-rating">
+	 <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+<div>
+<label style="font-weight:lighter; font-size:15px;">Sold By:BitMitg </label>
+</div>
+<label style="font-weight:lighter; font-size:15px;">Current price:<label style="color:red">$20</label></label>
+</br>
+<span style="font-weight:lighter; font-size:15px;"> Quantity:</span>
+<span>
+<select>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="10">10</option>
+  <option value="40">40</option>
+  <option value="100">100</option>
+  <option value="200">200</option>
+</select>
+</span>
+<div class="row" style="margin-left:5px">
+<input type="button" class= "btn btn-warning" value="Buy It" />
+<input type="button" class="btn btn-danger" style="margin-left:2px" value="close" data-dismiss="modal" />
+</div>
+  </div>
+	  </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <script> -->
+<!-- $(function() { -->
+
+  <!-- "use strict" -->
+  
+  <!-- var init = "No items yet!"; -->
+  <!-- var counter = 0; -->
+
+  <!-- // Initial Cart -->
+  <!-- $(".counter").html(init); -->
+  
+  <!-- // Add Items To Basket -->
+  <!-- function addToBasket() { -->
+    <!-- counter++; -->
+    <!-- $(".counter").html(counter).animate({ -->
+      <!-- 'opacity' : '0' -->
+    <!-- },300, function() { -->
+      <!-- $(".counter").delay(300).animate({ -->
+        <!-- 'opacity' : '1' -->
+      <!-- }) -->
+    <!-- }) -->
+  <!-- } -->
+  <!-- // Add To Basket Animation -->
+  <!-- $("button").on("click", function() { -->
+    <!-- addToBasket(); $(this).parent().parent().find(".product_overlay").css({ -->
+      <!-- 'transform': ' translateY(0px)', -->
+      <!-- 'opacity': '1', -->
+      <!-- 'transition': 'all ease-in-out .45s' -->
+    <!-- }).delay(1500).queue(function() { -->
+      <!-- $(this).css({ -->
+        <!-- 'transform': 'translateY(-500px)', -->
+        <!-- 'opacity': '0', -->
+        <!-- 'transition': 'all ease-in-out .45s' -->
+      <!-- }).dequeue(); -->
+    <!-- }); -->
+  <!-- }); -->
+<!-- }); -->
+<!-- </script> -->
+  </body>
+  </html>
+  

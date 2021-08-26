@@ -1,0 +1,272 @@
+
+<html  lang="en">
+<head>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+<style>
+.btn-outline-primary{
+margin:10px
+}
+.btn-primary{
+margin-bottom:10px;
+
+}
+.form-gap {
+    padding-top: 40px;
+}
+.hide{
+  display:none;
+}
+.show{
+  display:block;
+}
+#image_profile_edit{
+
+width:70;
+margin:auto;
+margin-bottom:-10px;
+
+
+}
+
+
+</style>
+
+<script>
+
+function showEditName(){
+document.getElementById("Name").setAttribute("type", "text")
+document.getElementById("EditName").setAttribute("value", "Reset")
+}
+
+function showEditLlastName(){
+document.getElementById("lastname").setAttribute("type","text");
+document.getElementById("editlnbtn").setAttribute("value","Reset");
+}
+
+function editEmail(){
+  document.getElementById("Editemai").setAttribute("type","Email");
+  document.getElementById("editELbtn").setAttribute("value","Reset");
+}
+function EdiCompany(){
+document.getElementById("EditCompanyName").setAttribute("type","text");
+document.getElementById("companybtn").setAttribute("value","Reset");
+
+}
+function EditteleNumber(){
+document.getElementById("EditNumber").setAttribute("type","Number");
+document.getElementById("teleNumberebtn").setAttribute("value","Reset");
+
+}
+function EditCitybtn(){
+document.getElementById("EditCity").setAttribute("type","text");
+document.getElementById("Citybtn").setAttribute("value","Reset");
+
+}
+function EditStatebtn(){
+document.getElementById("EditState").setAttribute("type","text");
+document.getElementById("Statebtn").setAttribute("value","Reset");
+
+}
+function EditCountrybtn(){
+document.getElementById("EditCountry").setAttribute("type","text");
+document.getElementById("Countrybtn").setAttribute("value","Reset");
+
+}
+function EditPasswordbtn(){
+document.getElementById("Editpassword").setAttribute("type","text");
+document.getElementById("passwordbtn").setAttribute("value","Reset");
+
+}
+
+
+var loadFile = function(event) {
+	var image = document.getElementById('output');
+	image.src = URL.createObjectURL(event.target.files[0]);
+};
+  </script>
+
+<body>
+
+<!-- Button trigger modal -->
+
+<button type="button" class="btn btn-primary" data-toggle="modal"  data-target="#exampleModalCenter">
+
+  Launch demo modal
+  
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">
+<ol class="breadcrumb" style="background-color:#f5f556;">
+    <li class="breadcrumb-item"><a href="#">User Profile</a></li>
+    <li class="breadcrumb-item active"style="color:black;" aria-current="page">Login & Security</li>
+  </ol>
+		</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       
+
+<div class="form-gap">
+
+
+<div class="container">
+  
+<div class="row">
+
+
+		<div class=" col-md-6">
+		
+            <div class="panel panel-default">
+			
+              <div class="panel-body">
+			  
+
+<table class="table ">
+  <thead class="thead-dark">
+   <tr>
+  
+	   <td>
+	   <p><img id="output" width="200" id="image_profile_edit" /></p>
+	   </td>
+	   <td>
+<p><label for="file" style="cursor: pointer; color:blue;">Change Image</label></p> 
+<p><input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;"></p>
+</td>
+
+
+
+  
+    
+	
+  </tr>
+    <tr>
+      <td scope="row" height="60">Name
+	  </br>
+	  <input type="hidden" id="Name" value="..." />
+	  </td>
+	  <td>
+	  <input type="button" value="edit" id="EditName" onclick="showEditName()" />
+	 
+	  </td>
+	 
+      
+    </tr>
+  </thead>
+  <tbody>
+ 
+    <tr>
+      <td scope="row" height="60">Last Name
+	  </br>
+	  <input type="hidden" id="lastname" value="..." />
+	  </td>
+	  <td>  
+	  <input type="button" name="answer" value="Edit" id="editlnbtn" onclick="showEditLlastName()" /> 
+
+
+	  </td>
+    </tr>
+	
+    <tr>
+      <td scope="row" height="60">Email
+	  </br>
+	  <input  type="hidden" id="Editemai" value="..." />
+	  </td>
+	   
+      <td>  
+	  <input type="button" name="answer" value="Edit" id="editELbtn" onclick="editEmail()" />
+
+	  </td>
+    </tr>
+    <tr>
+      <td scope="row" height="60">Company Name
+	  </br>
+	  <input type="hidden" id="EditCompanyName" value="...">
+	  </td>
+	  <td>  
+	  <input type="button" value="Edit" id="companybtn" onclick="EdiCompany()">
+
+	  </td>
+    </tr>
+	 <tr>
+      <td scope="row" height="60">Telephone Number
+	  </br>
+	   <input type="hidden" id="EditNumber" value="...">
+	    </td>
+	  <td>  
+	  <input type="button" value="Edit" id="teleNumberebtn" onclick="EditteleNumber()">
+	  </td>
+    </tr>
+	 <tr>
+      <td scope="row" height="60">City
+	  </br>
+	 <input type="hidden" id="EditCity" value="...">
+	 </td>
+	  <td>  
+	  <input type="button" value="Edit" id="Citybtn" onclick="EditCitybtn()">
+
+	  </td>
+    </tr>
+	 <tr>
+      <td scope="row" height="60">State
+	  </br>
+	  <input type="hidden" id="EditState" value="...">
+	  </td>
+	  <td>  
+	  <input type="button" value="Edit" id="Statebtn" onclick="EditStatebtn()" />
+
+	  </td>
+    </tr>
+	 <tr>
+      <td scope="row" height="60">Country
+	  </br>
+	  <input type="hidden" id="EditCountry" value="...">
+	  </td>
+	  <td>  
+	  <input type="button" value="Edit" id="Countrybtn" onclick="EditCountrybtn()">
+
+	  </td>
+    </tr>
+	 <tr>
+      <td scope="row" height="60">Password
+	  </br>
+	   <input type="hidden" id="Editpassword" value="...">
+	   </td>
+	  <td>  
+	 <input type="button" type="hidden" value="Edit" id="passwordbtn" onclick="EditPasswordbtn()">
+	  </td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+</div>
+<button type="button" class="btn  btn-primary  btn-lg">Done</button>
+</div>
+
+</div>
+
+</div>
+
+
+
+
+  </div>
+</div>
+
+</body>
+</head>
+</html>

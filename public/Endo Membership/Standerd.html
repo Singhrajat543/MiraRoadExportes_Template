@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Emdo Global-Help-Buyer </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../css/swiper.css">
+  <link rel="stylesheet" href="../css/slider.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/Membership.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .slider-img-bg{
+     width: 100%;
+     height: 400px;
+    }
+    @media only screen and (max-width: 786px) {
+        #navbar{
+            display: none;
+        }
+        .main-header {
+            height: 55px;
+        }
+        .main-header .main-header-left{
+            width: 100%;
+            display: block;
+        }
+        .main-header .main-header-left .header-logo-text {
+      float: left;
+    margin-top: -10px;  
+    margin-left: 10px;
+    }
+      .main-header .main-header-left .header-logo-text .text-1 {
+        color: #b86e00;
+        font-weight: 800;
+        font-style: italic;
+        text-transform: uppercase;
+    margin-top: 0px;;
+    }
+      .main-header .main-header-left .header-logo-text .text-2 {
+        font-weight: 800; }
+    
+    .main-header .main-header-left .header-center-search-form {
+        height: 100px;
+        width: 100%;
+        margin: 0;
+    }
+    .main-header .main-header-left .header-center-search-form .header-center-search-form-content {
+        margin-top: 0px;
+    }
+
+    .main-header .main-header-left .header-center-search-form .header-center-search-form-content select {
+          width: 15%; }
+        .main-header .main-header-left .header-center-search-form .header-center-search-form-content input[type=text] {
+          width: 65% }
+        .main-header .main-header-left .header-center-search-form .header-center-search-form-content button {
+          width: 20%; }
+          .index-slider{
+              margin-top: 40px;
+          }
+          .slider-img-bg{
+              height: 210px;
+          }
+          .emmembrsh{
+              height: 100px;
+          }
+          .emmembrsh .container-fluid .membership .membership-content h2 {
+              line-height: 50px;
+              font-size: 16px;
+          }
+          .emmembrsh .container-fluid .membership .membership-content button {
+            padding: 3px 10px;
+            margin-top: 30px;
+          }
+          .emmembrsh .container-fluid .membership .membership-content {
+              height:90px;
+          }
+          .emmembrsh .container-fluid .membership {
+            height:90px;
+          }
+          .recnaprod {
+              width: 100%;
+          }
+          .recnaprod h2 {
+              font-size:16px;
+              float: left;
+            text-align: left;
+              width: 100%;
+          }
+        }
+
+
+        .hel-header{
+          height: 350px;
+          width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="main-header">
+    <div class="main-header-left">
+      <div class="header-logo-text">
+        <h2> <a onclick="showsmallernav()" id="showNavbar" class="hidden-lg hidden-md"
+            style="font-size: 32px; margin-top: 3px; margin-right: 7px;"><i class="fa fa-bars"></i></a><span
+            class="text-1">Emdo</span><span class="text-2">Mart</span> </h2>
+      </div>
+      <a class="hidden-lg hidden-md"
+        style="float: right; padding: 3px 7px; font-size: 16px; margin-top: 15px; margin-right: 7px; text-decoration: none;">Login
+        / Sign In</a>
+      <div class="header-center-search-form">
+        <div class="header-center-search-form-content">
+          <select name="" id="">
+            <option value="Product">Product</option>
+            <option value="Suppliers">Suppliers</option>
+          </select>
+          <input type="text" placeholder="What are you looking for ?">
+          <button type="button"><i class="fa fa-search"></i> <span class="hidden-sm hidden-xs">Search</span></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-header-right">
+      <div class="header-content">
+        <ul>
+          <li class="hidden-sm hidden-xs"><a href=""><i class="fa fa-user-circle"></i> Sign In/ Join Free</a></li>
+          <li class="hidden-sm hidden-xs"><a href=""><i class="fa fa-envelope"></i> Messages</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="show-md-nav hidden-lg hidden-md" id="hide-md-nav-id"> </div>
+  <nav id="navbar">
+    <ul class="catagory-ul">
+      <li class="catli Catagories" onmouseover="hideSlider()" onmouseout="showSlider()"><a href="#" class="catlit"><i
+            class="fa fa-align-justify"></i> Catagories <i class="fa fa-angle-down"></i></a>
+        <div class="dropdown-list" id="ddl">
+          <div class="container-fluid dropdown-list-menu">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 catagory-first-col">
+                <ul class="dropdown-list-menu-items">
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(1)"
+                      class="dropdown-list-menu-items-li-a">Machinery / Fabrication Service <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i> </a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(2)"
+                      class="dropdown-list-menu-items-li-a">Consumer Electronics / Home Appliances <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(3)"
+                      class="dropdown-list-menu-items-li-a">Vehicles & Accessories / Sports & Entertainment <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" onmouseover="show1(4)"
+                      class="dropdown-list-menu-items-li-a">Apparel / Fabric / Timepieces / Accessories <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Home
+                      Textiles / Lights / Furniture / Construction <i
+                        class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Home &
+                      Kitchen / Garden Supplies / Pet Products <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Beauty &
+                      Personal Care / Health & Medical <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Packaging &
+                      Printing / Office / Service Equipment <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Electrical /
+                      Tools & Hardware / Security & Protection <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Electronic
+                      Components / Telecommunications <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Toys &
+                      Hobbies / Gifts & Crafts / Baby <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Bags / Shoes
+                      & Accessories <i class="fa fa-arrow-right navbar-inside-icon"></i></a></li>
+                  <li class="dropdown-list-menu-items-li"><a href="#" class="dropdown-list-menu-items-li-a">Minerals /
+                      Chemicals / Rubber & Plastics / Energy <i class="fa fa-arrow-right navbar-inside-icon"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-7 col-md-7 catagory-second-col">
+                <div class="container-fluid" id="subbcat">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="catli"><a href="#" class="catlit">Ready to Ship</a></li>
+      <li class="catli"><a href="#" class="catlit">Trade Shows</a></li>
+      <li class="catli"><a href="#" class="catlit sercdrpdn">Services</li>
+      <li class="catli"><a href="#" class="catlit">Sell on Emdo Mart</a></li>
+      <li class="catli"><a href="#" class="catlit">Help</a></li>
+      <li class="catli"><a href="#" class="catlit">Buy Emdo Membership</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="index-slider" id="isw" style="position: relative;;">
+    <div class="swiper-container  inslidcolcon" id="nodisplay" style="position:relative;">
+          <img src="../sliderimg/1.jpg" alt="" class="hel-header" style="position:relative;">
+          <div  style="position: absolute; top: 0%; text-align: center;height: 100%; width:100%; background-color: rgba(0, 0, 0, 0.404);">
+              <div class="Panel-body" >
+            
+              <h2 style="color: #fff;">SELL ON EMDOGLOBAL TO REACH MILLIONS OF BUYERS FROM AROUNT THE WORLD </h2>
+              <label style="color:deepskyblue">  GET MORE GLOBAL EXPOSURE FOR YOUR BUSINESS </label>
+            </br>
+              <label style="color:#050505">Data Collected by EMDOGLOBAL till <p id="date"></p></label>
+           
+              <div class="row" style="margin-left: 20%;">
+                <div class="column" style="float: left;width: 23.33%; padding :5px;">
+                  <img src="../img/buyers.jpg" alt="Snow" style=" height:60px;width:60px; ">
+                  <label  style="color:antiquewhite;"> 1,22,923 Active BUYERS Globally</label>
+                </div>
+                <div class="column"  style="float: left;width: 24.33%; padding :5px;">
+                  <img src="../img/Distributer.png" alt="Forest" style=" height:60px;width:60px;">
+                </br>
+                  <label style="color:antiquewhite;">We have total 3000+ Distributer </label> 
+                </div>
+                <div class="column"  style="float: left;width: 25.33%; padding :5px;">
+                  <img src="../img/seller.png" alt="Mountains" style=" height:60px;width:60px;">
+                </br>
+                  <label style="color:antiquewhite;">We have total 1021 Seller </label> 
+                </div>
+              </div>
+              
+          
+        
+         
+    </div> 
+          </div>
+         
+    </div>
+  </div>
+
+  <!-- <section class="emmembrsh"> -->
+    <!-- <div class="container-fluid"> -->
+      <!-- <div class="membership"> -->
+        <!-- <a class="membership-content"> -->
+          <!-- <h2>Want to Buy Our Membership </h2> -->
+          <!-- <button>Read More..</button> -->
+        <!-- </a> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </section> -->
+
+
+
+  <section id="bhtopi">
+   
+   
+    <div class="container">
+        <div class="row">
+        
+         
+                <div class=" col-md-12" id="tabs">
+                 <div class="row">
+                  <div class="column">
+                  <img class=" img img-responsive " src="../img/emdo mart black.png" style="width:60px;height:50px;">
+                  </div>
+                  <div class="column">
+                  <h3 style="margin-left: 60px;margin-top: -35px;">Emdoglobal.com</h3>
+                </div>
+                  </div>
+                        <ul id="tabsJustified" class="nav nav-tabs">
+                            <li class="nav-item"><a href="" data-target="#seller_service" data-toggle="tab" class="nav-link small text-uppercase active" >Apply for Standard Plan</a></li>
+                            <li class="nav-item"><a href="" data-target="#Make_payment" data-toggle="tab" class="nav-link small text-uppercase">Make payment</a></li>
+                           
+                        </ul>
+                        <br>
+                
+                    
+                    
+                      <div class="panel-body">
+                     
+          
+           
+           <div id="tabsJustifiedContent" class="tab-content">
+                            <div id="seller_service" class="tab-pane fade">
+                             <table class="table table-bordered" >
+                             <thead> 
+                                 
+                                 <th colspan="2"   style=" text-align: center;background-color: #3fcff3;">
+                           <label style="font-size: 20px;"> Your Standard Plan</label>
+                                 </br>
+                            <label style="color:cornsilk;"> Rs. 1,81,608/year</label>
+
+                                 </th>
+                           
+                             </thead>
+                             <tbody>
+                                <tr>
+
+                                    <td > Product showcases</td >
+                                    <td style=" text-align: center;">12 Product showcases</t>
+    
+    
+                                </tr>
+    
+                                 <tr>
+                                 <td >
+                                    Product Posting
+
+                                 </td >
+                                 <td  style=" text-align: center;" >
+                                   Unlimited
+
+                                </td>
+                                 </tr>
+
+                                 <tr>
+
+                                    <td>
+                                        Dedicated Service Manager 
+                                    </td>
+                                    
+                                        <td   style=" text-align: center;">  <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td>
+                                    
+                                  </tr>
+                                  <tr>
+    
+                                    <td>
+                                        Access to over 3000+Distribution Channels 
+                                    </td>
+                                    
+                                        <td   style=" text-align: center;">  <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td>
+                                    
+                                  </tr>
+                                  <tr>
+    
+                                    <td>
+                                        Market Research and Selection
+                                    </td>
+                                    
+                                        <td   style=" text-align: center;">  <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td> 
+                                    
+                                  </tr>
+                                  <tr>
+    
+                                    <td>
+                                        Participation of International Fairs
+                                    </td>
+                                    
+                                        <td   style=" text-align: center;">  <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td>
+                                    
+                                  </tr>
+                                  <tr>
+    
+                                    <td>
+                                        Control Panel to Manage Your Website 
+    
+                                    </td>
+                                    
+                                        <td   style=" text-align: center;">  <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td>
+                                    
+                                  </tr>
+
+                                  <tr>
+                                    <td >Priority customer support</td>
+                                    <td   style=" text-align: center;">  <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td>
+                                </tr>
+                                
+                           
+                                 <tr>
+                                <td >Priority search results ranking</td>
+                                <td   style=" text-align: center;">  <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td>
+                            </tr>
+                            <tr>
+                                <td > Statistical analysis tool</td>
+                                <td  style=" text-align: center;"> <span style='font-size:20px; color:green;  margin-left:100px'>&#10004;</span> </td>
+                            </tr>
+                            
+                            
+                             
+                             </tbody>
+
+                             </table>
+                             <div class="container">
+                                <div class="row">
+                                
+                                
+                                        <div class=" col-md-12" id="tabs">
+                            <table class="table">
+
+                             <thead><tr> 
+                               <th>
+                               
+                              <h3  style=" text-align: center;"> Standard Supplier Services agreement<h3> 
+
+                             </th>
+                            
+                            
+                            </tr>  
+                          </thead>
+                                    <tbody>
+                                      <tr>
+                                      <td> <iframe  type="application/pdf " src="../document/PAREKH INV.pdf" style="width:90%; height:300px;" ></iframe>  </td>
+                                      </tr>
+                                    </tbody>
+                                </table>
+                              </div>
+                              
+                              </div>
+                              </div>
+                              <div class="container" style="margin-left: 40%;" >
+                                
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optradio" checked> I agree
+                                  </label>
+                                  <label class="radio-inline">
+                                    <input type="radio" name="optradio"> i disagree 
+                                  </label>
+                                </br>
+                              </br>
+                              <div class="panel-body" style=" margin-left: -60px;">
+                                <input type="submit" class="btn btn-lg" style="padding: 15px 60px; background-color: darkgray;margin-left:-50px;" value="Continue">
+                              </br>
+                            </br>
+                                <label style="margin-left:-50px;"> I Agree with all Terms and condition wich mention In Above agreement</label>
+                              </div>
+                              </div>
+                              
+
+                            </div>
+
+           
+                            
+                            <div id="Make_payment" class="tab-pane fade active show">
+                                 <h4>Membership fee:<label> Rs. 1,81,608/year </label></h4>
+                         
+                         
+                        <h5>  It will take few minut to Complete payment Process</h5>
+
+                        <div class="panel panel-default" style="width:100% ;height: 100% ">
+                          <div class="panel-body" style="background-color:#c1e6e6;">
+                            <label style="color:rgb(8, 8, 95)"> Choose Payment Method  </label>
+                          </div>
+                        </div>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio" checked> <img src="../img/mastercard.png" alt="Forest" style=" height:60px;width:80px;margin-top: -15px;">
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio" > <img src="../img/wire_transfer.png" alt="Forest" style=" height:60px;width:80px;margin-top: -15px;"/>
+                        </label>
+                      </br>
+                    </br>
+                        <div class="panel panel-default" style="width:100% ;height: 100% ">
+                          <div class="panel-body" style="background-color:#c1e6e6;">
+                            <h5 style="color:rgb(8, 8, 95)"> Note: You acn pay with credit  card or debit card or visa . Thhis payment method 
+                            is provided by world pay. Except for wire Transfer , you willl be directed to an Emdoglobal.com Auhorise payment platform
+                            where your information will be kept using Sourse Socket Layer(SSL) technology, The highest level of security 
+                            </h5>
+                          </div>
+                        </div>
+                        <button type="button" class="btn btn-outline-secondary" style="margin-left: 35%; background-color: #050505; color: antiquewhite;">Continue</button>        
+
+                              </div>
+                           
+                             
+                          
+                      
+        </div>
+        
+        
+        
+        
+        
+        
+           
+
+    </div>
+    
+        </div>
+    
+    
+    </div>
+    </div>
+     
+
+   
+  </section>
+  
+
+  <footer class="footer" >
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 first-row">
+          <center>
+            <label>Trade Alert and industry news straight to your inbox.</label>
+            <br>
+            <input type="Email" name="email" placeholder="Email Address" class="footer-subscribe-input">
+            <input type="submit" class="footer-subscribe-button" value="Subscribe" />
+          </center>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 secro">
+          <h3>Logistics Services</h3>
+          <hr>
+          <ul>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Customs Brokerage</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Documentation</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Project Freight</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Pack & Devan</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span> <a href="#">Warehousing</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 secro">
+          <h3>Importent Links</h3>
+          <hr>
+          <ul class="footer_ul_amrc">
+            <li> <span class="fa  fa-chevron-right"></span><a href="About_Emdo_Global"> About Us</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="service"> Our Services</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="Become Partner"> Become a Partner</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="Become Affiliate"> Become an Affiliate</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="Emdo Foundation"> Emdo Foundation</a> </li>
+          </ul>
+
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 secro">
+          <h3>Buy with Emdo</h3>
+          <hr>
+          <ul>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> All Categories</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> Request for Quotation</a> </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-12 col-xs-12 secro">
+          <h3>Sell With Emdo</h3>
+          <hr>
+          <ul>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> Supplier Memberships</a> </li>
+            <li> <span class="fa  fa-chevron-right"></span><a href="#"> Add Product</a> </li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p></p>
+    </div>
+  </footer>
+  <section style="background: #292929; padding: 20px;" class="footer-catlin">
+    <div class="container-fluid">
+      <b>Top Categories:</b> <a href="">LED Products</a> | <a href="">Solar Panels</a> | <a href="">Jute Bags</a> | <a
+        href="">Lathe Machine</a> | <a href="">Gift Articles</a> | <a href="">Wedding & Ceremony Goods</a> | <a
+        href="">Sweets & Namkeen </a>| <a href="">Packaging Boxes</a> | <a href="">Sport Shoes</a> | <a href="">Costume
+        & Fashion Jewelry</a> | <a href="">Servo Voltage Stabilizer</a> | <a href="">Essential Oils</a> | <a
+        href="">Bottles</a> | <a href="">Women Wear</a> | <a href="">Home Furnishings</a> | <a href="">Tyres & Tubes</a>
+      | <a href="">Cricket Equipment</a> | <a href="">Oil & Lubricants</a> | <a href="">Sports Goods</a> | <a
+        href="">Disposable Products</a> | <a href="">Road Construction Machinery</a> | <a href="">Solar Products &
+        Equipment</a> | <a href="">Earthing Electrode</a> | <a href="">Cement Plant Machinery</a>
+      <br><br>
+      <b>Popular Products:</b> <a href="">Asphalt Drum Mix Plant</a> | <a href="">Asphalt Batch Mix Plant</a> | <a
+        href="">Branded Shirts</a> | <a href="">Asphalt Mixers</a> | <a href="">Fly Ash Dryer</a> | <a href="">Human
+        Hair</a> | <a href="">Bridal Suits</a> | <a href="">Cotton Shirts</a> | <a href="">Brand Jeans</a> | <a
+        href="">Ladies Kurtis</a> | <a href="">CCTV Camera</a> | <a href="">Mobile Accessories</a> | <a href="">Basmati
+        Rice</a> | <a href="">Vitrified Tiles</a> | <a href="">Solar Water Pump</a> | <a href="">Notebook Making
+        Machine</a> | <a href="">Portable Metal Detector</a> | <a href="">Prefabricated Structure</a> | <a href="">Solar
+        Led Street Light</a> | <a href="">Puf Panel</a> | <a href="">Ice Cream</a>
+      <br><br>
+      <b>City Based Popular Products:</b> <a href="">Sports Goods in Meerut</a> | <a href="">Ceramic Tiles in Morbi</a>
+      | <a href="">Jute Bags in Kolkata</a> | <a href="">Precision Auto Parts In Mumbai</a> | <a href="">Textile Fabric
+        in Ahmedabad</a> | <a href="">Jersey Cow in Karnal</a> | <a href="">Flush Doors in Yamunanagar</a> | <a
+        href="">Fancy Salwar Suits in Delhi</a> | <a href="">Branded T Shirts in Tirupur</a> | <a href="">Stainless
+        Steel Sheets in Mumbai</a> | <a href="">Hand Gloves in Faridabad</a> | <a href="">Brass Handicrafts in
+        Moradabad</a> | <a href="">Electronic Gadgets in Bengaluru</a> | <a href="">Brass Hinges in Jamnagar</a> | <a
+        href="">Stainless Steel Plates in Mumbai</a> | <a href="">Upvc Windows in Hyderabad</a> | <a href="">RO Plant in
+        Kolkata</a>
+    </div>
+  </section>
+  <!-- Swiper JS -->
+  <script src="../css/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.inslidcolcon', {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'fraction',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    function show1(str) {
+      document.getElementById("nodisplay").style.display = "none";
+      var xhttp;
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("subbcat").innerHTML = this.responseText;
+        }
+      };
+      xhttp.open("GET", "../catagory pages/navbar sub cat/"+str + ".html", true);
+      xhttp.send();
+    }
+
+    function hideSlider() {
+      document.getElementById("nodisplay").style.display = "none";
+      document.getElementById("isw").style.marginTop = "240px";
+      document.getElementById("ddl").style.width = screen.width + "px";
+      console.log(screen.width);
+
+    }
+    function showSlider() {
+      document.getElementById("nodisplay").style.display = "block";
+      document.getElementById("isw").style.marginTop = "0px";
+    }
+    var swiper = new Swiper('.naprod', {
+      slidesPerView: 'auto',
+      spaceBetween: 1,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+
+    function showsmallernav() {
+      document.getElementById("showNavbar").setAttribute("onclick", "hidesmallernav");
+      document.getElementById("show-md-nav-id").setAttribute("id", "hide-md-nav-id");
+      console.log("hidesmallernav");
+    }
+    function hidesmallernav() {
+      document.getElementById("showNavbar").setAttribute("onclick", "showsmallernav");
+      document.getElementById("hide-md-nav-id").setAttribute("id", "show-md-nav-id");
+      console.log("hidesmallernav");
+    }
+  </script>
+   <script>
+    var d = new Date();
+    document.getElementById("date").innerHTML = d;
+    </script>
+
+  
+</body>
+
+</html>

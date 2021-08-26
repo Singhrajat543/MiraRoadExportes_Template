@@ -1,0 +1,132 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/Feedback_Star.css" rel="stylesheet">
+
+
+</head>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+
+</script>
+
+<body>
+
+<div class="form-gap">
+<div class="container">
+<div class="row">
+
+
+		<div class=" col-md-12" id="tabs">
+		<h2>Tabs</h2>
+                <ul id="tabsJustified" class="nav nav-tabs">
+                    <li class="nav-item"><a href="" data-target="#home1" data-toggle="tab" class="nav-link small text-uppercase active" >Product Feedback </a></li>
+                    <li class="nav-item"><a href="" data-target="#profile1" data-toggle="tab" class="nav-link small text-uppercase">manufacturer</a></li>
+                    
+                </ul>
+                <br>
+		
+            
+			
+              <div class="panel-body">
+			 
+  
+   
+   <div id="tabsJustifiedContent" class="tab-content">
+                    <div id="home1" class="tab-pane fade">
+                       <table class="table">
+					   <thead>
+					   <tr>
+					   					   <h1 style="margin-left:80px;">Overall rating</h1>
+<fieldset class="rating" style="margin-left:50px;">
+    <input type="radio" id="star5" name="rating" value="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
+    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+    <input type="radio" id="star4" name="rating" value="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
+    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+    <input type="radio" id="star3" name="rating" value="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
+    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+    <input type="radio" id="star2" name="rating" value="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
+    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+    <input type="radio" id="star1" name="rating" value="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
+    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+</fieldset>
+					   </tr>
+					   </thead>
+					   
+					   <tbody>
+					   <tr>
+					   <td>
+					   <label for="exampleFormControlTextarea1">Example textarea</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" style="width:300 " rows="3"></textarea>
+	</br>
+	<button type="button" class="btn btn-lg  btn-warning" data-toggle="popover" title=" Thank You!" data-content=" Thank You For giving Us Your Valuable Feedback We will Look at it">Save Feedback</button>
+					  </td>
+					  </tr>
+					   </tbody>
+					   </table>
+					   
+                    </div>
+					
+                    <div id="profile1" class="tab-pane fade active show">
+                        <div class="row pb-2">
+                            <div class="col-md-12">
+                              <table class="table"> 
+							  <tbody>
+							  <tr>
+							  <td>
+							  manufacturer
+							  </td>
+							  </tr>
+							  <tr>
+							  <td>
+							  product
+							  </td>
+							  </tr>
+							  <tr>
+							  <td>
+							  Details
+							  </td>
+							  </tr>
+							  </tbody>
+							  </table>							  
+							  
+							  
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+   
+   
+			  </table>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>	  
+   
+    
+
+
+
+
+
+</body>
+
+</html>

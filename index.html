@@ -1,0 +1,206 @@
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<style>
+#log{
+border:2px solid black;
+padding:10px; 10px;
+}
+
+img{
+width:100px;
+margin:auto;
+}
+
+#img2{
+
+height:60px;
+width:70px;
+margin-left:30px;
+
+}
+
+#registerFormLink{
+margin-left:150px;
+
+
+}
+
+</style>
+
+</head>
+<body>
+<!-- login part -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal"  tabindex="-1" id="log" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <style> -->
+<!-- div { -->
+  <!-- background-image: url("img/loginimg.jpg"); -->
+<!-- } -->
+<!-- </style> -->
+  <div class="modal-dialog" style="background-color:black"  role="document">
+  
+    <div class="modal-content"  >
+	
+	<!-- <img src="img/loginimg.jpg"/ width="300px" height="300px"> -->
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel"  style="color:Red;text-align:center;font-style:Courier New">LogIn</h2>
+		<img class=" img img-responsive img-circle " src="img/emdo mart black.png" >
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       <form role="form">
+	   <div class="form-group has-feedback has-feedback-left">
+			    					<div class="form-group">
+									
+							<label class="control-label">Enter UsereName</label>		 
+			                <input type="text" name="UserName" id="UserName" class="form-control input-sm"  placeholder="UserName">
+							<i class="form-control-feedback glyphicon glyphicon-user "></i>
+			    					</div>
+			    		</div>	
+							<div class="form-group has-feedback has-feedback-left">	
+								<div class="form-group">
+								<label class="control-label">Enter Password</label>
+			    				<input type="password" name="password" id="password" class="form-control input-sm" placeholder="password">
+								<i class="form-control-feedback glyphicon glyphicon-lock "></i>
+			    			</div>
+								
+			    				</div>	
+								
+								<div class="checkbox">
+								<label><input type="checkbox">Remember Me </label>
+								</div>
+								<div>
+								<a href="Forgot_possword.html" id="registerFormLink" > Forgot UserName or password ? </a>
+	                            </div>
+      
+      <div class="modal-footer">
+	 <input type="button" value="LogIn" class="btn btn-success btn-block">
+        <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+         <button type="button" class="btn btn-danger btn-block" data-toggle="modal" data-target="#myModal">Sign Up</button>
+      </div>
+	  </form>
+    </div>
+  </div>
+</div>
+<!-- login part -->
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+ 
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+		  <img class=" img img-responsive img-circle" id="img2"  src="img/emdo mart black.png" >
+          <h4 class="modal-title" style= "margin-top:-40px; margin-left:150px; font:italic" >Emdo Global</h4>
+        </div>
+        <div class="modal-body">
+         <form role="form" >
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+									 
+			                <input type="text" name="first_name" id="first_name" class="form-control input-sm" placeholder="First Name">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="text" name="last_name" id="last_name" class="form-control input-sm" placeholder="Last Name">
+			    					</div>
+			    				</div>
+			    			</div>
+
+			    			<div class="form-group">
+			    				<input type="email" name="email" id="email" class="form-control input-sm" placeholder="Email Address">
+			    			</div>
+							
+                          <div class="form-group">
+                                <input type="text" name="Company name" id="Company name" class="form-control input-sm" placeholder=" Company name ">
+                            </div>
+							<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			                <input type="number" name="Area code" id="number" class="form-control input-sm" placeholder="Area code">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="number" name="Telephone Number" id="last_name" class="form-control input-sm" placeholder="Telephone Number">
+			    					</div>
+			    				</div>
+			    			</div>
+							
+							<div class="form-group">
+			    				<input type="text" name="Enter_City" id="Enter_City" class="form-control input-sm" placeholder="Enter_City">
+			    			</div>
+							<div class="form-group">
+			    				<input type="text" name="Enter State" id="Enter State" class="form-control input-sm" placeholder="Enter State">
+			    			</div>
+							<div class="form-group">
+						<div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Select Country
+                  </button>
+               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                 <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+               <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>	
+           </div>
+							
+							
+			    			<div class="row">
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password" id="password" class="form-control input-sm" placeholder="Password">
+			    					</div>
+			    				</div>
+			    				<div class="col-xs-6 col-sm-6 col-md-6">
+			    					<div class="form-group">
+			    						<input type="password" name="password_confirmation" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
+			    					</div>
+			    				</div>
+			    			</div>
+			    			
+			    			<input type="submit" value="Register" class="btn btn-info btn-block">
+			    		
+			    		</form> 
+		  
+		  
+		  
+		  
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>
